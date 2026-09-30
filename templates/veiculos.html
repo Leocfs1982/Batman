@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veículos</title>
+
+    <link rel="stylesheet" href="/frontend/estilos.css">
+    <link rel="icon" type="image/png" href="/frontend/images/batman-seeklogo.png">
+</head>
+<body>
+    <nav>
+        <img src="/frontend/images/batman-seeklogo.png" alt="Logo do Batman" class="logo-nav">
+        <a href="/missoes">Missões</a>
+        <a href="/arsenal">Arsenal</a>
+        <a href="/veiculos" class="ativo">Veículos</a>
+        <a href="/usuarios">Usuários</a>
+    </nav>
+    <h1>Veículos</h1>
+    <h2>Controle de Estoque</h2>
+    <button onclick="carregarEstoque()">Recarregar</button>
+
+    <table id="tabelaEstoque">
+        <thead>
+            <tr>
+                <th>Veículo</th>
+                <th>Quantidade</th>
+            </tr>
+        </thead>
+        <tbody id="corpoTabela"></tbody>
+    </table>
+
+    <button onclick="salvarEstoque()">Salvar Estoque</button>
+    <div id="mensagem"></div>
+
+    <script src="frontend/veiculos.js"></script>
+</body>
+</html>

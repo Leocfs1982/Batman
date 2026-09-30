@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuários</title>
+
+    <link rel="stylesheet" href="/frontend/estilos.css">
+    <link rel="icon" type="image/png" href="/frontend/images/batman-seeklogo.png">
+</head>
+<body>
+    <nav>
+        <img src="/frontend/images/batman-seeklogo.png" alt="Logo do Batman" class="logo-nav">
+        <a href="/missoes">Missões</a>
+        <a href="/arsenal">Arsenal</a>
+        <a href="/veiculos">Veículos</a>
+        <a href="/usuarios" class="ativo">Usuários</a>
+    </nav>
+    <h1>Usuários</h1>
+    <h2>Controle de Usuários e Acesso</h2>
+    <button onclick="carregarUsuarios()">Recarregar</button>
+
+    <table id="tabelaUsuarios">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Senha</th>
+                <th>Nível de acesso</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody id="corpoTabela"></tbody>
+    </table>
+    <div id="mensagem"></div>
+
+    <script src="frontend/usuarios.js"></script>
+</body>
+</html>

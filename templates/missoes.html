@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Missões</title>
+
+    <link rel="stylesheet" href="/frontend/estilos.css">
+    <link rel="icon" type="image/png" href="/frontend/images/batman-seeklogo.png">
+</head>
+<body>
+    <nav>
+        <img src="/frontend/images/batman-seeklogo.png" alt="Logo do Batman" class="logo-nav">
+        <a href="/missoes" class="ativo">Missões</a>
+        <a href="/arsenal">Arsenal</a>
+        <a href="/veiculos">Veículos</a>
+        <a href="/usuarios">Usuários</a>
+    </nav>
+    <h1>Missões</h1>
+    <h2>Lista de Missões</h2>
+
+    <video class="video-missoes" src="/frontend/videos/2420-158691979_medium.mp4" autoplay muted loop playsinline preload="auto"></video>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Concluída</th>
+                <th>Missão</th>
+            </tr>
+        </thead>
+        <tbody id="corpoTabela"></tbody>
+    </table>
+
+    <button onclick="salvarMissoes()">Salvar</button>
+    <div id="mensagem"></div>
+
+    <script src="frontend/missoes.js"></script>
+</body>
+</html>
